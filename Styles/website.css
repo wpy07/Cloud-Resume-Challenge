@@ -1,0 +1,100 @@
+body {
+  padding-left: 17rem;
+  background-color: white;
+}
+
+p {
+  color: black;
+}
+
+li {
+  color: black;
+}
+
+.firstname-style {
+  color: black;
+  animation: moveInLeft 1s ease-out;
+}
+
+.lastname-style {
+  color: rgb(40, 110, 175);
+  animation: moveInRight 2s ease-in;
+}
+
+h1 {
+  margin-bottom: 1px;
+}
+
+.location-email {
+  margin-top: 5px;
+  animation: moveInRight 3s ease-in;
+}
+
+.email-address {
+  color: rgb(40, 110, 175);
+}
+
+.email-address:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.intro {
+  animation: moveInLeft 2s ease-out;
+}
+
+.about-grid {
+  width: 55%;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 50px;
+  border-radius: 50%;
+  color: white;
+  background-color: gray;
+  text-decoration: solid;
+  animation: moveInRight 2s ease-in;
+}
+
+.fa:hover {
+  background-color: rgb(89, 147, 167);
+}
+
+@keyframes moveInLeft {
+  /* before the animation starts */
+  0% {
+    opacity: 0;
+
+    /* move the element 100px to the left of the original position. Negative number means to the left */
+    transform: translateX(-10rem);
+  }
+
+  /* when we want something to happen in the middle (or any other time just changing the percent) of the animation  */
+  80% {
+    /* take the element 20px to the right of the original position. Positive number means to the right. */
+    transform: translateX(1rem);
+  }
+
+  /* when the animation finish */
+  100% {
+    opacity: 1;
+
+    /* bring the element to the initial position (0) */
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

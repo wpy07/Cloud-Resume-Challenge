@@ -1,0 +1,47 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgb(89, 147, 167);
+  width: 17rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.sidebar-link {
+  height: 30px;
+  margin-bottom: 1px;
+  color:lightgray;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sidebar-link:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.sidebar-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-picture {
+  display: inline-block;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: rgb(114, 183, 206);
+  border-width: 5px;
+  position: relative;
+  bottom: 0;
+}
+
+.profile-picture:hover {
+  cursor: pointer;
+}
